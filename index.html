@@ -5,25 +5,54 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>CV</title>
+		<style>
+			body {
+				background-image: url("noise.jpg");
+			}
+
+			.lg-wdt {
+				height: 500px;
+			}
+		</style>
 	</head>
 
 	<body>
 		<div>
-			<img id="photo" src="images/DSC_3236.JPG" alt="Photo of Fahri" id="pic" />
+			<ul>
+				<li><a href="#about">About Me</a></li>
+				<li><a href="#education">Education</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#hobbies">Hobbies</a></li>
+			</ul>
+		</div>
 
-			<div>
-				<h1>Fahri</h1>
+		<div>
+			<hr />
+			<img
+				id="photo"
+				src="images/DSC_3236.JPG"
+				alt="Photo of Fahri"
+				id="pic"
+				style="width: 125px; height: 200px"
+			/>
+
+			<div class="lg-wdt">
+				<h2>Fahri Siswoto Kadelan Denan</h2>
 
 				<p>
-					Cell: <span class="tel">555-666-7777</span><br />
-					Email:
+					Phone No. : <span class="tel">123-456-6789</span><br />
+					Email :
 					<a class="email" href="mailto:fahry657@gmail.com"
 						>fahry657@gmail.com</a
 					>
 				</p>
 			</div>
 
-			<div>
+			<div class="lg-wdt">
+				<hr />
+				<a name="about"><h2>About Me</h2> </a>
+
 				<p>
 					Passionate about the limitless potential of technology, I am a
 					dedicated and enthusiastic software engineer ready to shape the future
@@ -42,54 +71,66 @@
 				</p>
 			</div>
 
-			<div></div>
-
 			<dl>
-				<dd></dd>
+				<div class="lg-wdt">
+					<hr />
+					<dt>
+						<a name="education"><h2>Education</h2></a>
+					</dt>
+					<dd>
+						<h3><a href="https://sist.ac.ma/">SIST University</a></h3>
+						<p><strong>Major:</strong> Software Engineer<br /></p>
+					</dd>
+				</div>
 
-				<dt><h2>Education</h2></dt>
-				<dd>
-					<h3><a href="https://sist.ac.ma/">Sist University</a></h3>
-					<p><strong>Major:</strong> Software Engineer<br /></p>
-				</dd>
+				<div class="lg-wdt">
+					<hr />
+					<dt>
+						<a name="skills"><h2>Skills</h2></a>
+					</dt>
+					<dd>
+						<h3>Office skills</h3>
+						<p>
+							Office and records management, database administration, event
+							organization, customer support, travel coordination
+						</p>
 
-				<dd></dd>
+						<h3>Computer skills</h3>
+						<p>
+							Microsoft productivity software (Word, Excel, etc), Adobe Creative
+							Suite, Windows
+						</p>
+					</dd>
+				</div>
 
-				<dt><h2>Skills</h2></dt>
-				<dd>
-					<h3>Office skills</h3>
-					<p>
-						Office and records management, database administration, event
-						organization, customer support, travel coordination
-					</p>
+				<div class="lg-wdt">
+					<hr />
+					<dt>
+						<a name="experience"><h2>Experience</h2></a>
+					</dt>
+					<dd>
+						<h3>
+							Lightweight Social Media App
+							<span>
+								<h5><i>Made with Flutter</i></h5>
+							</span>
+						</h3>
+						<ul>
+							<li>An app where user can post texts and images</li>
+							<li>Data is stored in Firebase</li>
+						</ul>
+					</dd>
+				</div>
 
-					<h3>Computer skills</h3>
-					<p>
-						Microsoft productivity software (Word, Excel, etc), Adobe Creative
-						Suite, Windows
-					</p>
-				</dd>
-
-				<dd></dd>
-
-				<dt><h2>Experience</h2></dt>
-				<dd>
-					<h3>Lightweight Social Media App <span>Made with Flutter</span></h3>
-					<ul>
-						<li>An app where user can post texts and images</li>
-						<li>Data is stored in Firebase</li>
-					</ul>
-				</dd>
-
-				<dd></dd>
-
-				<dt><h2>Hobbies</h2></dt>
-				<dd>Football, Animation, Gaming</dd>
-
-				<dd></dd>
+				<div class="lg-wdt">
+					<hr />
+					<dt>
+						<a name="hobbies"></a>
+						<h2>Hobbies</h2>
+					</dt>
+					<dd>Football, Animation, Gaming</dd>
+				</div>
 			</dl>
-
-			<div></div>
 		</div>
 	</body>
 </html>
