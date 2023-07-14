@@ -1,4 +1,16 @@
 <!DOCTYPE html>
+
+<!-- ========== 
+	OBJECTIVES
+	1. use semantic tags. 
+	2. add a video/audio to the web page. 
+	3. use local links, lists, or tables. 
+	4. use HTML forms.
+	5- Create the navbar: home, about, work, resume, contact
+	6- Create the “about” section, ”work” section, ”resume” section, and ”contact” section (using HTML Forms) 
+	7- Create the page footer.
+========== -->
+
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -17,29 +29,29 @@
 	</head>
 
 	<body>
-		<div>
-			<ul>
-				<li><a href="#about">About Me</a></li>
-				<li><a href="#education">Education</a></li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#experience">Experience</a></li>
-				<li><a href="#hobbies">Hobbies</a></li>
-			</ul>
-		</div>
+		<!-- ========== Start Section ========== -->
 
-		<div>
+		<!-- ========== End Section ========== -->
+		<header>
+			<nav>
+				<a href="#about">About Me</a> | <a href="#education">Education</a> |
+				<a href="#skills">Skills</a> | <a href="#experience">Experience</a> |
+				<a href="#hobbies">Hobbies</a>
+			</nav>
+		</header>
+
+		<main>
 			<hr />
-			<img
-				id="photo"
-				src="images/DSC_3236.JPG"
-				alt="Photo of Fahri"
-				id="pic"
-				style="width: 125px; height: 200px"
-			/>
 
 			<div class="lg-wdt">
 				<h2>Fahri Siswoto Kadelan Denan</h2>
-
+				<img
+					id="photo"
+					src="images/DSC_3236.JPG"
+					alt="Photo of Fahri"
+					id="pic"
+					style="width: 125px; height: 200px"
+				/>
 				<p>
 					Phone No. : <span class="tel">123-456-6789</span><br />
 					Email :
@@ -47,11 +59,25 @@
 						>fahry657@gmail.com</a
 					>
 				</p>
+
+				<h4>Contact me here</h4>
+				<form action="#">
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" required />
+
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required />
+
+					<label for="message">Message:</label>
+					<textarea id="message" name="message" rows="5" required></textarea>
+
+					<input type="submit" value="Submit" />
+				</form>
 			</div>
 
 			<div class="lg-wdt">
 				<hr />
-				<a name="about"><h2>About Me</h2> </a>
+				<a id="about"><h2>About Me</h2> </a>
 
 				<p>
 					Passionate about the limitless potential of technology, I am a
@@ -71,22 +97,24 @@
 				</p>
 			</div>
 
-			<dl>
-				<div class="lg-wdt">
-					<hr />
+			<div class="lg-wdt">
+				<hr />
+				<dl>
 					<dt>
-						<a name="education"><h2>Education</h2></a>
+						<a id="education"><h2>Education</h2></a>
 					</dt>
 					<dd>
 						<h3><a href="https://sist.ac.ma/">SIST University</a></h3>
 						<p><strong>Major:</strong> Software Engineer<br /></p>
 					</dd>
-				</div>
+				</dl>
+			</div>
 
-				<div class="lg-wdt">
-					<hr />
+			<div class="lg-wdt">
+				<hr />
+				<dl>
 					<dt>
-						<a name="skills"><h2>Skills</h2></a>
+						<a id="skills"><h2>Skills</h2></a>
 					</dt>
 					<dd>
 						<h3>Office skills</h3>
@@ -101,12 +129,14 @@
 							Suite, Windows
 						</p>
 					</dd>
-				</div>
+				</dl>
+			</div>
 
-				<div class="lg-wdt">
-					<hr />
+			<div class="lg-wdt">
+				<hr />
+				<dl>
 					<dt>
-						<a name="experience"><h2>Experience</h2></a>
+						<a id="experience"><h2>Experience</h2></a>
 					</dt>
 					<dd>
 						<h3>
@@ -120,17 +150,21 @@
 							<li>Data is stored in Firebase</li>
 						</ul>
 					</dd>
-				</div>
+				</dl>
+			</div>
 
-				<div class="lg-wdt">
-					<hr />
+			<div class="lg-wdt">
+				<hr />
+				<dl>
 					<dt>
-						<a name="hobbies"></a>
+						<a id="hobbies"></a>
 						<h2>Hobbies</h2>
 					</dt>
 					<dd>Football, Animation, Gaming</dd>
-				</div>
-			</dl>
-		</div>
+				</dl>
+			</div>
+		</main>
+
+		<footer>&copy; 2019 Fahri. All rights reserved. Created using HTML</footer>
 	</body>
 </html>
