@@ -3,7 +3,7 @@
 <!-- ========== 
 	OBJECTIVES
 	1. use semantic tags. 
-	2. add a video/audio to the web page. 
+	2. adiv a video/audio to the web page. 
 	3. use local links, lists, or tables. 
 	4. use HTML forms.
 	5- Create the navbar: home, about, work, resume, contact
@@ -15,17 +15,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="widivh=device-widivh, initial-scale=1.0" />
 		<title>CV</title>
-		<style>
-			body {
-				background-image: url("noise.jpg");
-			}
-
-			.lg-wdt {
-				height: 500px;
-			}
-		</style>
 	</head>
 
 	<body>
@@ -34,22 +25,30 @@
 		<!-- ========== End Section ========== -->
 		<header>
 			<nav>
-				<a href="#about">About Me</a> | <a href="#education">Education</a> |
-				<a href="#skills">Skills</a> | <a href="#experience">Experience</a> |
-				<a href="#hobbies">Hobbies</a>
+				<ul>
+					<li><a href="#about">About Me</a></li>
+					<li><a href="#education">Education</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#hobbies">Hobbies</a></li>
+				</ul>
 			</nav>
 		</header>
 
 		<main>
 			<hr />
 
-			<div class="lg-wdt">
+			<div class="lg-wdiv">
+				<audio controls>
+					<source src="./audio/summer-walk-152722.mp3" type="audio/mp3" />
+					Your browser does not support the audio element.
+				</audio>
+
 				<h2>Fahri Siswoto Kadelan Denan</h2>
 				<img
 					id="photo"
 					src="images/DSC_3236.JPG"
 					alt="Photo of Fahri"
-					id="pic"
 					style="width: 125px; height: 200px"
 				/>
 				<p>
@@ -75,9 +74,9 @@
 				</form>
 			</div>
 
-			<div class="lg-wdt">
+			<div class="lg-wdiv">
 				<hr />
-				<a id="about"><h2>About Me</h2> </a>
+				<h2 id="about">About Me</h2>
 
 				<p>
 					Passionate about the limitless potential of technology, I am a
@@ -97,26 +96,26 @@
 				</p>
 			</div>
 
-			<div class="lg-wdt">
+			<div class="lg-wdiv">
 				<hr />
-				<dl>
-					<dt>
-						<a id="education"><h2>Education</h2></a>
-					</dt>
-					<dd>
+				<div>
+					<div>
+						<h2 id="education">Education</h2>
+					</div>
+					<div>
 						<h3><a href="https://sist.ac.ma/">SIST University</a></h3>
 						<p><strong>Major:</strong> Software Engineer<br /></p>
-					</dd>
-				</dl>
+					</div>
+				</div>
 			</div>
 
-			<div class="lg-wdt">
+			<div class="lg-wdiv">
 				<hr />
-				<dl>
-					<dt>
-						<a id="skills"><h2>Skills</h2></a>
-					</dt>
-					<dd>
+				<div>
+					<div>
+						<h2 id="skills">Skills</h2>
+					</div>
+					<div>
 						<h3>Office skills</h3>
 						<p>
 							Office and records management, database administration, event
@@ -128,40 +127,39 @@
 							Microsoft productivity software (Word, Excel, etc), Adobe Creative
 							Suite, Windows
 						</p>
-					</dd>
-				</dl>
+					</div>
+				</div>
 			</div>
 
-			<div class="lg-wdt">
+			<div class="lg-wdiv">
 				<hr />
-				<dl>
-					<dt>
-						<a id="experience"><h2>Experience</h2></a>
-					</dt>
-					<dd>
+				<div>
+					<div>
+						<h2 id="experience">Experience</h2>
+					</div>
+					<div>
 						<h3>
 							Lightweight Social Media App
 							<span>
-								<h5><i>Made with Flutter</i></h5>
+								<i>Made with Flutter</i>
 							</span>
 						</h3>
 						<ul>
 							<li>An app where user can post texts and images</li>
 							<li>Data is stored in Firebase</li>
 						</ul>
-					</dd>
-				</dl>
+					</div>
+				</div>
 			</div>
 
-			<div class="lg-wdt">
+			<div class="lg-wdiv">
 				<hr />
-				<dl>
-					<dt>
-						<a id="hobbies"></a>
-						<h2>Hobbies</h2>
-					</dt>
-					<dd>Football, Animation, Gaming</dd>
-				</dl>
+				<div>
+					<div>
+						<h2 id="hobbies">Hobbies</h2>
+					</div>
+					<div>Football, Animation, Gaming</div>
+				</div>
 			</div>
 		</main>
 
