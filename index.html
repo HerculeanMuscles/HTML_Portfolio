@@ -2,29 +2,26 @@
 
 <!-- ========== 
 	OBJECTIVES
-	1. use semantic tags. 
-	2. adiv a video/audio to the web page. 
-	3. use local links, lists, or tables. 
-	4. use HTML forms.
-	5- Create the navbar: home, about, work, resume, contact
-	6- Create the “about” section, ”work” section, ”resume” section, and ”contact” section (using HTML Forms) 
-	7- Create the page footer.
+	Create a file `styles.css`.
+	Link it to our HTML project.
+	Change the display of the navbar to make it inline.
+	Change the font to roboto.
+	Add classes attributes to HTML / HTML documents .
+	Be creative !
 ========== -->
 
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="widivh=device-widivh, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>CV</title>
+		<link rel="stylesheet" href="./styles.css" />
 	</head>
 
 	<body>
-		<!-- ========== Start Section ========== -->
-
-		<!-- ========== End Section ========== -->
 		<header>
-			<nav>
+			<nav id="navi">
 				<ul>
 					<li><a href="#about">About Me</a></li>
 					<li><a href="#education">Education</a></li>
@@ -36,14 +33,15 @@
 		</header>
 
 		<main>
-			<hr />
-
 			<div class="lg-wdiv">
 				<audio controls>
 					<source src="./audio/summer-walk-152722.mp3" type="audio/mp3" />
+
 					Your browser does not support the audio element.
 				</audio>
+			</div>
 
+			<div class="lg-wdiv">
 				<h2>Fahri Siswoto Kadelan Denan</h2>
 				<img
 					id="photo"
@@ -75,7 +73,6 @@
 			</div>
 
 			<div class="lg-wdiv">
-				<hr />
 				<h2 id="about">About Me</h2>
 
 				<p>
@@ -97,71 +94,53 @@
 			</div>
 
 			<div class="lg-wdiv">
-				<hr />
 				<div>
-					<div>
-						<h2 id="education">Education</h2>
-					</div>
-					<div>
-						<h3><a href="https://sist.ac.ma/">SIST University</a></h3>
-						<p><strong>Major:</strong> Software Engineer<br /></p>
-					</div>
+					<h2 id="education">Education</h2>
+				</div>
+				<div>
+					<h3><a href="https://sist.ac.ma/">SIST University</a></h3>
+					<p><strong>Major:</strong> Software Engineer<br /></p>
 				</div>
 			</div>
 
 			<div class="lg-wdiv">
-				<hr />
+				<h2 id="skills">Skills</h2>
 				<div>
-					<div>
-						<h2 id="skills">Skills</h2>
-					</div>
-					<div>
-						<h3>Office skills</h3>
-						<p>
-							Office and records management, database administration, event
-							organization, customer support, travel coordination
-						</p>
+					<h3>Office skills</h3>
+					<p>
+						Office and records management, database administration, event
+						organization, customer support, travel coordination
+					</p>
 
-						<h3>Computer skills</h3>
-						<p>
-							Microsoft productivity software (Word, Excel, etc), Adobe Creative
-							Suite, Windows
-						</p>
-					</div>
+					<h3>Computer skills</h3>
+					<p>
+						Microsoft productivity software (Word, Excel, etc), Adobe Creative
+						Suite, Windows
+					</p>
 				</div>
 			</div>
 
 			<div class="lg-wdiv">
-				<hr />
-				<div>
-					<div>
-						<h2 id="experience">Experience</h2>
-					</div>
-					<div>
-						<h3>
-							Lightweight Social Media App
-							<span>
-								<i>Made with Flutter</i>
-							</span>
-						</h3>
-						<ul>
-							<li>An app where user can post texts and images</li>
-							<li>Data is stored in Firebase</li>
-						</ul>
-					</div>
-				</div>
+				<h2 id="experience">Experience</h2>
+				<h3>
+					Lightweight Social Media App
+					<span>
+						<i>Made with Flutter</i>
+					</span>
+				</h3>
+				<ul>
+					<li>An app where user can post texts and images</li>
+					<li>Data is stored in Firebase</li>
+				</ul>
 			</div>
 
 			<div class="lg-wdiv">
-				<hr />
-				<div>
-					<div>
-						<h2 id="hobbies">Hobbies</h2>
-					</div>
-					<div>Football, Animation, Gaming</div>
-				</div>
+				<h2 id="hobbies">Hobbies</h2>
+				Football, Animation, Gaming
 			</div>
 		</main>
+
+		<br />
 
 		<footer>&copy; 2019 Fahri. All rights reserved. Created using HTML</footer>
 	</body>
